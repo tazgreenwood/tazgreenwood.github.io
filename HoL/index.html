@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+      var number = Math.random() * 100;
+
+      number = Math.floor(number);
+
+      var guess = prompt("Guess a number.");
+
+      while (guess != number) {
+
+        if (guess > number) {
+          prompt("Lower.");
+        }
+        else {
+          prompt("Higher.");
+        }
+      }
+
+      alert("You Got It!!!!");
+
+    </script>
+
+  </body>
+</html>
