@@ -14,6 +14,8 @@
 
       var guess = prompt("Guess a number.");
 
+      var counter = 0;
+
       while (guess != number) {
 
         if (guess > number) {
@@ -22,9 +24,10 @@
         else {
           guess = prompt("Higher.");
         }
+        counter += 1;
       }
 
-      alert("You Got It!!!!");
+      alert("You Got It In ",counter," Tries!!!!");
 
     </script>
 
