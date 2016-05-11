@@ -6,30 +6,12 @@
   </head>
   <body>
 
-    <script type="text/javascript">
-
-      var number = Math.random() * 100;
-
-      number = Math.floor(number);
-
-      var guess = prompt("Guess a number.");
-
-      var counter = 0;
-
-      while (guess != number) {
-
-        if (guess > number) {
-          guess = prompt("Lower.");
-        }
-        else {
-          guess = prompt("Higher.");
-        }
-        counter += 1;
-      }
-
-      alert("You Got It In " + counter + " Tries!!!!");
-
-    </script>
+    <div id="img">
+      <h1 id="title"></h1>
+      <p id="count"></p>
+    </div>
 
   </body>
+  <script src="script.js"></script>
+
 </html>
