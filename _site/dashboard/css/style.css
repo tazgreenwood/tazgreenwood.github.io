@@ -1,0 +1,30 @@
+#login {
+  margin: 100px auto;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  border: 2px outset #CCC;
+}
+
+.welcome {
+  padding-top: 100px;
+}
+
+#loginBtn {
+  width: 200px;
+  height: 40px;
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+#continue {
+  display: none;
+  width: 200px;
+  height: 40px;
+  margin: 20px auto;
+  font-size: 18px;
+}
+
+#success {
+  display: none;
+}
