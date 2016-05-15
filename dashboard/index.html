@@ -5,14 +5,15 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Dashboard</title>
   </head>
-  <body>
+  <body id="logBody">
 
     <div id="login">
       <h1 class="welcome">Welcome to the Dashboard</h1>
       <h3>Login below to get started.</h3>
-      <button id=loginBtn type="button" onclick="login()">Click here to login</button>
-      <h1 id="success">Success!</h1>
-      <button id="continue" type="button" href="admin/index.html">Click to proceed</button>
+      <input id="username" type="text" name="username" placeholder="Username">
+      <input id="password" type="password" name="password" placeholder="Password">
+      <p id="error">Invalid username or password.</p>
+      <button id="loginbtn" type="button" onclick="login()">Login</button>
     </div>
 
   <script src="js/script.js"></script>

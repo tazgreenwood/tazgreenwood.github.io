@@ -1,4 +1,9 @@
+#logBody {
+  background-color: #EEE;
+}
+
 #login {
+  background-color: #FFF;
   margin: 100px auto;
   width: 500px;
   height: 500px;
@@ -10,21 +15,29 @@
   padding-top: 100px;
 }
 
-#loginBtn {
+#username {
+  display: block;
   width: 200px;
   height: 40px;
-  margin-top: 50px;
+  margin: 25px auto;
   font-size: 18px;
 }
 
-#continue {
-  display: none;
+#password {
+  display: block;
   width: 200px;
   height: 40px;
-  margin: 20px auto;
+  margin: 25px auto;
   font-size: 18px;
 }
 
-#success {
+#loginbtn {
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+}
+
+#error {
   display: none;
+  color:red;
 }

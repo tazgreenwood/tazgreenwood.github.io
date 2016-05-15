@@ -1,10 +1,10 @@
 var login = function(){
-  var username = prompt("Enter your username");
-  var password = prompt("Enter your password");
-  if (username === 'taz' && password === '1234') {
+  var username = document.getElementById('username').value.toUpperCase();
+  console.log(username);
+  var password = document.getElementById('password').value.toUpperCase();
+  if (username === 'TAZ' && password === '1234') {
     location.href = "admin/index.html";
   } else {
-    username = prompt("Incorrect. Enter your username");
-    password = prompt("Incorrect. Enter your password");
+    document.getElementById('error').style.display = 'block';
   }
 };
