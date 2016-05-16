@@ -3,7 +3,7 @@ var login = function(){
   console.log(username);
   var password = document.getElementById('password').value.toUpperCase();
   if (username === 'TAZ' && password === '1234') {
-    location.href = "admin/index.html";
+    location.href = "admin/";
   } else {
     document.getElementById('error').style.display = 'block';
   }
