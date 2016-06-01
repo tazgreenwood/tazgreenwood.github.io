@@ -1592,6 +1592,9 @@ pre code {
   padding-left: 15px;
   padding-right: 15px;
 }
+.project {
+  padding-top: 25px;
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
