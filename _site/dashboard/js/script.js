@@ -8,3 +8,8 @@ var login = function(){
     document.getElementById('error').style.display = 'block';
   }
 };
+
+
+function page1() {
+  document.getElementById('display').innerHTML = "hello";
+}

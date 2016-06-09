@@ -77,3 +77,11 @@ body {
   background-color: #445566;
   backgrou
 }
+#display {
+  position: absolute;
+  background-color:#DDEEFF;
+  margin-left:250px;
+  width: 100%;
+  top: 0px;
+  bottom: 0px;
+}
