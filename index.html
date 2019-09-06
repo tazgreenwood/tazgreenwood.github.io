@@ -1,31 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/custom_theme.css">
   <link rel="stylesheet" href="css/style.css">
 
+  <script src="https://kit.fontawesome.com/154d333095.js"></script>
+
   <title>Taz Greenwood - Portfolio</title>
 </head>
+
 <body>
 
-  <h1 class="bg-primary">Taz Greenwood</h1>
-  <h1 class="bg-secondary">Taz Greenwood</h1>
-  <h1 class="bg-light">Taz Greenwood</h1>
-  <h1 class="bg-dark text-info">Taz Greenwood</h1>
-  <h1 class="bg-warning">Taz Greenwood</h1>
-  <h1 class="bg-danger">Taz Greenwood</h1>
-  <h1 class="bg-info">Taz Greenwood</h1>
-  <h1 class="bg-success">Taz Greenwood</h1>
-  <button class="btn btn-primary">Click Me</button>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-none">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link mx-3 active" onclick="goTo('main')" href="#"><i class="fa fa-home"></i> Home</a>
+        <a class="nav-item nav-link mx-3" onclick="goTo('about')" href="#"><i class="fa fa-info"></i> About</a>
+        <a class="nav-item nav-link mx-3" onclick="goTo('skills')" href="#"><i class="fa fa-wrench"></i> Skills</a>
+        <a class="nav-item nav-link mx-3" onclick="goTo('projects')" href="#"><i class="fa fa-folder"></i> Projects</a>
+        <a class="nav-item nav-link mx-3"onclick="goTo('contact')" href="#"><i class="fa fa-phone"></i> Contact</a>
+      </div>
+    </div>
+  </nav>
 
+  <section class="vh-100" id="main">
+    <div class="vh-100 d-flex flex-column align-items-center justify-content-center overlay">
+      <div>
+        <img src="images/IMG_1508.JPG" alt="" class="rounded mx-auto d-block">
+        <h1 class="text-light mt-3 text-center">Taz Greenwood</h1>
+        <h3 class="text-warning text-center">Software Engineer</h3>
+      </div>
+      <button onclick="goTo('about')" class="btn btn-outline-light mt-5"><i class="fa fa-arrow-down"></i></button>
+    </div>
+  </section>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+  <section class="container-fluid vh-100 bg-primary d-flex flex-column align-items-center justify-content-center"
+    id="about">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <img src="images/IMG_0505.JPG" alt="Ski Jackson Hole" class="rounded">
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-5 text-white d-flex flex-column justify-content-between">
+        <div class="bg-info rounded px-3 py-2">
+          <h1>Hello, my name is Taz.</h1>
+          <p class="text-light">
+            I am a Software Engineer seeking to utilize my skills, abilities and experiences gained through relevant
+            employment, internships, education and projects to better the world around me.
+          </p>
+        </div>
+        <div class="bg-info rounded px-3 py-2">
+          <p class="text-light">
+            I find joy in spending time with my family as well as spending time outside, listening to and creating
+            music,
+            and innovating everything around me.
+          </p>
+        </div>
+        <div class="bg-info rounded px-3 py-2">
+          <p class="text-light">
+            Computer programming has changed my life and I want to share that with you. I work hard to deliver the best
+            software solutions that meets and often exceeds expectations. I am willing to do what it takes to succeed.
+          </p>
+        </div>
+      </div>
+    </div>
+    <button onclick="goTo('skills')" class="btn btn-outline-light mt-5"><i class="fa fa-arrow-down"></i></button>
+  </section>
+
+  <section class="vh-100" id="skills">
+    <div class="container-liquid overlay vh-100 vw-100 d-flex flex-column align-items-center justify-content-center">
+      <h1 class="text-light">Technical Skills</h1>
+      <div class="row vw-100 justify-content-center">
+        <div class="col-sm-12 col-md-5 col-lg-5 bg-info p-5 rounded">
+          <span class="text-light font-weight-bold">Golang</span>
+          <div class="progress m-2">
+            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+              aria-valuemax="100">75%</div>
+          </div>
+          <span class="text-light font-weight-bold">Python</span>
+          <div class="progress m-2">
+            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+              aria-valuemax="100">70%</div>
+          </div>
+          <span class="text-light font-weight-bold">C++</span>
+          <div class="progress m-2">
+            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+              aria-valuemax="100">70%</div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5 col-lg-5 bg-info p-5 rounded">
+          <span class="text-light font-weight-bold">React</span>
+          <div class="progress m-2">
+            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+              aria-valuemax="100">80%</div>
+          </div>
+          <span class="text-light font-weight-bold">Node</span>
+          <div class="progress m-2">
+            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+              aria-valuemax="100">70%</div>
+          </div>
+          <span class="text-light font-weight-bold">SQL</span>
+          <div class="progress m-2">
+            <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0"
+              aria-valuemax="100">65%</div>
+          </div>
+        </div>
+      </div>
+      <div class="m-3">
+        <span class="badge badge-secondary p-3">HTML</span>
+        <span class="badge badge-success p-3">CSS</span>
+        <span class="badge badge-danger p-3">JavaScript</span>
+        <span class="badge badge-light p-3">Swift</span>
+        <span class="badge badge-secondary p-3">MongoDB</span>
+        <span class="badge badge-success p-3">Ruby</span>
+        <span class="badge badge-danger p-3">Java</span>
+      </div>
+    <button onclick="goTo('projects')" class="btn btn-outline-light mt-5"><i class="fa fa-arrow-down"></i></button>
+    </div>
+  </section>
+
+  <section class="container-fluid vh-100 bg-dark d-flex align-items-center justify-content-center" id="projects">
+    <h1 class="bg-warning rounded p-3">This is the projects section</h1>
+  </section>
+
+  <section class="container-fluid vh-100 bg-dark d-flex align-items-center justify-content-center" id="contact">
+    <h1 class="bg-warning rounded p-3">This is the contact section</h1>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
