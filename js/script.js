@@ -1,33 +1,24 @@
-var stack = ['main'];
-
-function hideDiv(name) {
-    var p = stack[stack.length-1];
-    while (p != name) {
-        div = document.getElementById(p);
-        div.classList.remove('showdiv');
-        div.classList.add('hidediv');
-        div.style.top = '100vh';
-        setTimeout(function () {
-            div.classList.remove('hidediv');
-            div.style.zIndex = -1;
-        }, 250);
-        stack.pop();
-        p = stack[stack.length-1];
-    }
-}
-
-function showDiv(name) {
-    div = document.getElementById(name);
-    div.style.zIndex = 1000;
-    div.classList.add('showdiv');
-    div.style.top = 0;
-}
-
-function goTo(name) {
-    if (stack.indexOf(name) === -1) {
-        showDiv(name);
-        stack.push(name);
-    } else {
-        hideDiv(name);
-    }
-}
+$(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
