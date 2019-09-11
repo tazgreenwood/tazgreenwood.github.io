@@ -9,6 +9,7 @@ function hideDiv(name) {
         div.style.top = '100vh';
         setTimeout(function () {
             div.classList.remove('hidediv');
+            div.style.zIndex = -1;
         }, 250);
         stack.pop();
         p = stack[stack.length-1];
@@ -17,6 +18,7 @@ function hideDiv(name) {
 
 function showDiv(name) {
     div = document.getElementById(name);
+    div.style.zIndex = 1000;
     div.classList.add('showdiv');
     div.style.top = 0;
 }
