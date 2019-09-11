@@ -1,5 +1,7 @@
 body {
-    overflow: hidden;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 
 #main {
@@ -13,13 +15,6 @@ body {
     width: 250px;
 }
 
-#about {
-    position: absolute;
-    top: 100vh;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
 #about img {
     width: inherit;
 }
@@ -27,30 +22,28 @@ body {
 #skills {
     background-image: url(../images/IMG_1735.JPG);
     background-size: cover;
-    position: absolute;
-    top: 100vh;
-    left: 0;
-    right: 0;
-    bottom: 0;
 }
 #skills .overlay {
     background-color: rgba(50,50,50,0.5);
 }
 
-#projects {
-    position: absolute;
-    top: 100vh;
-    left: 0;
-    right: 0;
-    bottom: 0;
+#projects img {
+    height: 75vh;
+    width: auto;
+    display: block;
+    margin: 0 auto;
 }
-
-#contact {
-    position: absolute;
-    top: 100vh;
-    left: 0;
-    right: 0;
-    bottom: 0;
+@media only screen and (max-width: 600px) {
+    #projects img {
+        width: auto;
+        height: 25vh;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    #projects img {
+        width: auto;
+        height: 35vh;
+    }
 }
 
 .showdiv {
